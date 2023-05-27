@@ -341,7 +341,7 @@
     </main>
 
     <footer class="section global-footer">
-      <div class="container">
+      <div class="container flex">
         <ul class="contacts-socials-list">
           <li class="contacts-items">
             <a class="logo" href="./index.html"
@@ -404,15 +404,83 @@
             </ul>
           </li>
         </ul>
+        <form class="footer-form">
+          <span class="footer-name">Subscribe to the newsletter</span>
+          <div class="email-button-row">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe<svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
-          <svg width="18px" height="18px">
+          <svg class="modal-icon" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+
+        <form class="service-form">
+          <h3 class="service-form-title">
+            Leave your information and we'll call you back
+          </h3>
+
+          <label class="service-form-label">
+            <span class="service-form-description">Name</span>
+            <svg width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
+            <input class="service-form-input" type="text" name="name" />
+          </label>
+
+          <label class="service-form-label">
+            <span class="service-form-description">Telephone</span>
+            <svg width="13" height="13">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <input class="service-form-input" type="tel" name="phone-number" />
+          </label>
+
+          <label class="service-form-label">
+            <span class="service-form-description">E-mail</span>
+            <svg width="15" height="12">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+            <input class="service-form-input" type="email" name="e-mail" />
+          </label>
+
+          <label class="service-form-label">
+            <span class="service-form-description">Comments</span>
+            <textarea
+              class="service-form-textarea"
+              name="Coments"
+              rows="7"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+
+          <label class="terms-and-conditions">
+            <input type="checkbox" name="terms-and-conditions" />
+            <span
+              >I agree with the letter and accept the
+              <a href="#">Terms and Conditions</a></span
+            >
+          </label>
+          <button class="submit-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>
