@@ -758,9 +758,13 @@ img {
   cursor: pointer;
 }
 .service-form-label:focus-within svg {
-  fill: var(--link-button-color);
+  color: var(--link-button-color);
 }
 .service-form-label:focus-within input {
+  outline: 0;
+  border-color: var(--link-button-color);
+}
+.service-form-label:focus-within textarea {
   outline: 0;
   border-color: var(--link-button-color);
 }
