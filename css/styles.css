@@ -757,34 +757,10 @@ img {
   background: #188ce8;
   cursor: pointer;
 }
-label:focus-within svg {
-  fill: var(--text-color-accent);
-}
-label:focus-within .service-form-label {
-  color: var(--text-color-accent);
-}
-input:focus-within {
-  border-color: var(--link-button-color);
-}
-input:focus-within {
-  border-color: var(--link-button-color);
-}
-input:focus-within svg {
-  border-color: var(--link-button-color);
-}
-input:focus-within {
-  border-color: var(--link-button-color);
-}
-.service-form-label:focus-within {
-  fill: var(--link-button-color);
-  border-color: var(--link-button-color);
-}
-.service-form-label:focus-within svg input {
+.service-form-label:focus-within svg {
   fill: var(--link-button-color);
 }
-.service-form-label:focus-within {
-  fill: var(--text-color-accent);
-}
-.service-form:focus-within {
-  fill: var(--text-color-accent);
+.service-form-label:focus-within input {
+  outline: 0;
+  border-color: var(--link-button-color);
 }
